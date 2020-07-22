@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+
+<body>
+    <form method="POST" action="/add">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="name" />
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" placeholder="age" />
+        </div>
+        <div>
+            <label for="mail">Mail</label>
+            <input type="email" name="mail" placeholder="mail" />
+        </div>
+        <button type="submit">Ajouter</button>
+    </form>
+    <form method="POST" action="/remove?_method=DELETE">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="name">
+        </div>
+        <button type="submit">Supprimé</button>
+    </form>
+    <form method="POST" action="/modify?_method=PUT">
+        <div>
+            <label for="id">Id a modifier</label>
+            <input type="number" name="id" placeholder="id" />
+        </div>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="name" />
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" placeholder="age" />
+        </div>
+        <div>
+            <label for="mail">Mail</label>
+            <input type="email" name="mail" placeholder="mail" />
+        </div>
+        <button type="submit">Modifier user</button>
+    </form>
+    <form method="GET" action="/viewall">
+        <button type="submit">View all</button>
+    </form>
+    <form method="POST" action="/viewone">
+        <div>
+            <label for="id">Id à afficher</label>
+            <input type="number" name="id" placeholder="id">
+        </div>
+        <button type="submit">Afficher</button>
+    </form>
+</body>
+
+</html>
